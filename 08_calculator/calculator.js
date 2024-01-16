@@ -7,17 +7,21 @@ const subtract = function(a, b) {
 };
 
 const sum = function(arr) {
-  let total = 0;
-	for (num of arr) total += num;
-  return total;
+  // let total = 0;
+	// for (num of arr) total += num;
+  // return total;
+
+  return arr.reduce((sum, currentArrValue) => (sum + currentArrValue), 0);
 };
 
 const multiply = function(arr) {
-  total = 1;
-  for (let i = 0 ; i < arr.length; i++) {
-    total *= arr[i];
-  }
-  return total;
+  // total = 1;
+  // for (let i = 0 ; i < arr.length; i++) {
+  //   total *= arr[i];
+  // }
+  // return total;
+  
+  return arr.reduce((total, curretnArrValue) => (total *= curretnArrValue));
 };
 
 const power = function(n, p) {
